@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# tooling caches
+.pytest_cache/
+.ruff_cache/
+
+# macOS
+.DS_Store
+
+# generated plots (commit deliberately if worth keeping)
+exercises/**/*.png
