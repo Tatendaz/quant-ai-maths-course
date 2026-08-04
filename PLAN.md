@@ -24,6 +24,17 @@
 
 Phases 5a/5b can run in parallel or one after the other — decide when you get there.
 
+## Session habits
+
+- **First 5 minutes: spaced review.** Re-derive one item from an earlier week's
+  checkpoint (rotate through them). As you finish each week, add its key formulas to
+  `notes/formula-sheet.md` — or an Anki deck if that sticks better.
+- **Weekly, ~5 min: explain it out loud.** Record yourself explaining the week's
+  hardest concept from memory; gaps surface the moment you have to narrate.
+- **Pacing is provisional.** Month boundaries flex: the diagnostic score and
+  `notes/month-NN.md` drive each month's expansion. Stretching a month is normal,
+  not failure.
+
 ---
 
 ## Month 1 — A-level refresh + tooling (detailed)
@@ -85,9 +96,12 @@ day's idea in code.
 
 ### Months 2–3 — Linear algebra
 
-Vectors, matrices, linear maps, eigenvalues/eigenvectors, SVD. Anchors: 3Blue1Brown
-*Essence of Linear Algebra*, MIT 18.06 (Strang), *Mathematics for Machine Learning*
-ch. 2–4. Projects: matrix ops from scratch, then PCA on real stock or crypto returns.
+Vectors, matrices, linear maps, eigenvalues/eigenvectors, SVD — plus the numerical
+side: LU/QR factorizations, conditioning, and solving least-squares stably (used more
+day-to-day than eigenvalue theory). Anchors: 3Blue1Brown *Essence of Linear Algebra*,
+MIT 18.06 (Strang), *Mathematics for Machine Learning* ch. 2–4. Projects: matrix ops
+from scratch, then PCA on real stock or crypto returns — fetch (yfinance/CCXT), clean,
+and compute log-returns yourself; every later project uses real data.
 
 ### Month 4 — Multivariable calculus & optimization
 
@@ -98,7 +112,8 @@ descent variants. Projects: 2-D gradient descent visualizer; a tiny autodiff eng
 
 Distributions, conditional probability, Bayes, law of large numbers, CLT. Anchor:
 Blitzstein's Stat 110 (free lectures + book). Projects: simulate the CLT; a Bayesian
-A/B test.
+A/B test. End with a bridge week — random walks → discrete-time martingales → simulate
+Brownian motion — so the quant fork's Itô material doesn't arrive cold.
 
 ### Month 7 — Statistics
 
@@ -109,10 +124,11 @@ likelihood. Project: OLS with diagnostics on market data.
 
 - **Quant:** time series (stationarity, ARIMA, GARCH, cointegration), random walks &
   Brownian motion, a taste of Itô, Monte Carlo pricing. **Capstone:** pairs-trading
-  backtest — crypto data is an easy, familiar sandbox.
+  backtest — crypto data is an easy, familiar sandbox — with transaction costs and
+  walk-forward validation, not just an in-sample fit.
 - **AI:** matrix calculus, information theory (entropy, KL divergence, cross-entropy),
   convex optimization. **Capstone:** a NumPy-only neural net trained end-to-end on a
-  small dataset.
+  small dataset, with proper train/val/test splits and a scikit-learn baseline to beat.
 
 ---
 
@@ -121,8 +137,9 @@ likelihood. Project: OLS with diagnostics on market data.
 - *Mathematics for Machine Learning* — Deisenroth, Faisal, Ong (free PDF)
 - *Introduction to Probability* — Blitzstein & Hwang
 - *Introduction to Linear Algebra* — Strang
-- Quant side, for later: *Paul Wilmott Introduces Quantitative Finance*; Zhou's
-  *A Practical Guide to Quantitative Finance Interviews* (the "green book")
+- Quant side, for later: *Paul Wilmott Introduces Quantitative Finance*; Ernie Chan's
+  *Quantitative Trading* (practical strategy framing); Zhou's *A Practical Guide to
+  Quantitative Finance Interviews* (the "green book")
 
 ## Progress log
 
