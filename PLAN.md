@@ -48,8 +48,8 @@ day's idea in code.
 ### Week 1 — Algebra, functions & setup
 
 - [x] Set up the repo, Python env, Jupyter, NumPy + Matplotlib
-- [ ] Take a diagnostic: Math Academy placement, or Khan Academy "course challenge" for
-      Algebra II — record the result in the Progress Log
+- [x] Take a diagnostic: Math Academy placement, or Khan Academy "course challenge" for
+      Algebra II — record the result in the Progress Log (8/30, 2026-08-04)
 - [ ] Refresh: solving equations and inequalities, exponentials & logarithms, function
       transformations
 - [ ] **Code:** plot function families (polynomials, exp, log); write a
