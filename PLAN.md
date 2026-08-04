@@ -49,7 +49,7 @@ day's idea in code.
 
 - [x] Set up the repo, Python env, Jupyter, NumPy + Matplotlib
 - [x] Take a diagnostic: Math Academy placement, or Khan Academy "course challenge" for
-      Algebra II — record the result in the Progress Log (8/30, 2026-08-04)
+      Algebra II — record the result in the Progress Log
 - [ ] Refresh: solving equations and inequalities, exponentials & logarithms, function
       transformations
 - [ ] **Code:** plot function families (polynomials, exp, log); write a
