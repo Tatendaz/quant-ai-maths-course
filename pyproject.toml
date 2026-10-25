@@ -3,7 +3,7 @@ name = "quant-ai-maths-course"
 version = "0.1.0"
 requires-python = ">=3.13"
 dependencies = [
-    "jupyterlab>=4.6.2",
+    "jupyterlab>=4.6.4",
     "matplotlib>=3.11.1",
     "numpy>=2.5.1",
 ]
@@ -12,3 +12,11 @@ dependencies = [
 dev = [
     "pytest>=9.1.1",
 ]
+
+[tool.uv]
+# Resolve only releases at least 7 days old. Many worms in 2026 shipped as new
+# versions of trusted packages and were pulled within days.
+exclude-newer = "7 days"
+# certifi 2026.10.19 is the only fix for GHSA-6q48-6c7w-9gw2 and was 5 days old
+# when pinned. Remove this line after 2026-10-27, when it clears the window.
+exclude-newer-package = { certifi = false }
